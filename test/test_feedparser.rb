@@ -65,7 +65,7 @@ class TestFeedparser < Test::Unit::TestCase
   end
 
   def test_crazy
-    crazy = File.open('crazy.html').read
+    crazy = File.open(File.dirname(__FILE__) + '/crazy.html').read
     sane = "Crazy HTML -- Can Your Regex Parse This?\n\n\n\n<!-" +
       "- <script> -->\n\n<!-- \n\t<script> \n-" +
       "->\n\n\n\nfunction executeMe()\n{\n\n\n\n\n/* \n<h1>Did The" +
