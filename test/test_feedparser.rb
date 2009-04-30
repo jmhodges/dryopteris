@@ -41,10 +41,10 @@ class TestFeedparser < Test::Unit::TestCase
   end
 
   def test_javascript_event_attributes
-    %w(onabort onblur onchange onclick ondblclick onerror onfocus onkeydown
+    %w[onabort onblur onchange onclick ondblclick onerror onfocus onkeydown
        onkeypress onkeyup onload onmousedown onmouseout onmouseover onmouseup
        onreset onresize onsubmit onunload  
-      ).each do |prop|
+      ].each do |prop|
       assert_removed_attr prop
     end
   end
