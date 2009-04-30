@@ -7,7 +7,7 @@ class TestFeedparser < Test::Unit::TestCase
                  )
   end
 
-  def test_blink_removal
+  def test_blink
     assert_clean "safe description", "<blink>safe</blink> description"
   end
 
